@@ -1,0 +1,23 @@
+.BreweryDetailsMainContainer{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.BreweryDetailsDataMainContainer{
+    
+    width: 400px;
+    height: 450px;
+}
+.BreweryDetailsContainer{
+    display: flex;
+    flex-direction: column;
+    padding-top: 20px;
+    padding-bottom: 20px;
+}
+.BreweryDetailsTextContainer{
+    display: flex;
+    flex-direction: row;
+}
+.BreweryDetailsTitles{
+    width: 35%;
+}
