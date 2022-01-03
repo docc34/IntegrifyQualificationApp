@@ -7,12 +7,12 @@ import 'bootstrap/dist/css/bootstrap.min.css';
 function App() {
   return (
     <div className="App">
-      <Router>
+      {/* <Router>
         <Routes>
           <Route path="/"  element={<Home />}></Route>
           <Route path="/companyDetail"element={<CompanyDetail />}></Route>
         </Routes>
-      </Router>
+      </Router> */}
     </div>
   );
 }
