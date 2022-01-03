@@ -1,0 +1,36 @@
+.HomePageContainer{
+    background-color: rgb(37, 28, 28);
+    padding-top: 50px;
+    padding-left: 10%;
+    padding-bottom: 10%;
+    padding-right: 10%;
+    display: flex;
+    flex-direction: column;
+}
+.HomePageSearchContainer{
+    display: flex;
+    padding-bottom: 100px;
+}
+.HomePageSearchParamsContainers{
+    display: flex;
+    flex-direction: column;
+
+}
+.SearchParamsLabels{
+    padding-right: 15px;
+    width:30%;
+    padding-top: 15px;
+    color: white;
+}
+.SearchParamsInputs{
+    height: 30px;
+    margin-left: 5px;
+}
+.HomePageSearchParamsInputContainers{
+    display: flex;
+    flex-direction: row;
+    align-items: baseline;
+    margin-left: 15%;
+    margin-right: 15%;
+    min-width: 350px;
+}

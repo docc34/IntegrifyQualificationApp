@@ -1,4 +1,5 @@
 import { Image, Card, Row, Col } from 'react-bootstrap';
+import './utils.css';
 const MakeCard = (p)=>{
  //Näin voi cutomoida kortin ulkonäköä
     //   <Card
@@ -14,23 +15,23 @@ const MakeCard = (p)=>{
         <div>
           <Row xs={1} sm={1} md={2}  xl={3}  className="g-4" >
             {p.data.map((e, i) => {
-              let url = "";
+
               if(e!= null){
-                 url = "/Maksu/?jobPostId=" + e.idJobPost;
+              
               return (<Col>
                 <Card className="Post-Card">
                   <Card.Body>
-                    <Card.Title>Test</Card.Title>
+                    <Card.Title><div>{e.name}</div></Card.Title>
                     <Card.Text className="CardData"> 
                       <div className="ProfileCardTitleContainer">
-                        <div>{e.name}</div>
+                        
                         <div>{e.brewery_type}</div>
                         <div>{e.city}</div>
                       </div>
                     </Card.Text>
                     <Card.Text className="CardFooter"> 
                       <div className="ProfileCardTitleContainer">
-                        <a href={"/companyDetail?companyName=" + e.name+"&longitude="+e.longitude+"&latitude="+e.latitude}>CompanyDetails</a>
+                        <a href={"/companyDetail?companyName=" + e.name+"&longitude="+e.longitude+"&latitude="+e.latitude}>Brewery details</a>
                       </div>
                     </Card.Text>
                   </Card.Body>

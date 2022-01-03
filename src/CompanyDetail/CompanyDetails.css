@@ -1,12 +1,26 @@
 .BreweryDetailsMainContainer{
+    background-color: rgb(37, 28, 28);
     display: flex;
     align-items: center;
     justify-content: center;
+    height: fit-content;
+    min-height: 1000px;
+    max-height: 1440px;
+}
+.BreweryDetailsDataBackGroundContainer{
+    background-color: aqua;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 450px;
+    height: 600px;
 }
 .BreweryDetailsDataMainContainer{
-    
+    margin-top: 50%;
+    margin-bottom: 50%;
+    padding: 15px;
+    background-color: green;
     width: 400px;
-    height: 450px;
 }
 .BreweryDetailsContainer{
     display: flex;

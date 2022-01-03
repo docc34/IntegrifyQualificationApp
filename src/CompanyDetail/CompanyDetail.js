@@ -27,20 +27,22 @@ const CompanyDetail = () =>{
     },[]);
     return (
         <div className='BreweryDetailsMainContainer'>
-            <div className='BreweryDetailsDataMainContainer'>
-                <h1>Brewerydetails</h1>
-                <div className="BreweryDetailsContainer">
-                    <div className='BreweryDetailsTextContainer'><p className='BreweryDetailsTitles'>Name:</p> <p> <NullToText data={companyData?.name}/></p></div>
-                    <div className='BreweryDetailsTextContainer'><p className='BreweryDetailsTitles'>Brewery type:</p><p> <NullToText data={companyData?.brewery_type}/></p></div>
-                    <div className='BreweryDetailsTextContainer'><p className='BreweryDetailsTitles'>Street:</p><p> <NullToText data={companyData?.street}/></p></div>
-                    <div className='BreweryDetailsTextContainer'><p className='BreweryDetailsTitles'>Address 2:</p><p><NullToText data={companyData?.address_2}/></p></div>
-                    <div className='BreweryDetailsTextContainer'><p className='BreweryDetailsTitles'>Address 3:</p><p> <NullToText data={companyData?.address_3}/></p></div>
-                    <div className='BreweryDetailsTextContainer'><p className='BreweryDetailsTitles'>City:</p><p> <NullToText data={companyData?.city}/></p></div>
-                    <div className='BreweryDetailsTextContainer'><p className='BreweryDetailsTitles'>State:</p><p> <NullToText data={companyData?.state}/></p></div>
-                    <div className='BreweryDetailsTextContainer'><p className='BreweryDetailsTitles'>County_province:</p><p> <NullToText data={companyData?.county_province}/></p></div>
-                    <div className='BreweryDetailsTextContainer'><p className='BreweryDetailsTitles'>Postal_code:</p><p> <NullToText data={companyData?.postal_code}/></p></div>
+            <div className='BreweryDetailsDataBackGroundContainer'>
+                <div className='BreweryDetailsDataMainContainer'>
+                    <h1>Brewerydetails</h1>
+                    <div className="BreweryDetailsContainer">
+                        <div className='BreweryDetailsTextContainer'><p className='BreweryDetailsTitles'>Name:</p> <p> <NullToText data={companyData?.name}/></p></div>
+                        <div className='BreweryDetailsTextContainer'><p className='BreweryDetailsTitles'>Brewery type:</p><p> <NullToText data={companyData?.brewery_type}/></p></div>
+                        <div className='BreweryDetailsTextContainer'><p className='BreweryDetailsTitles'>Street:</p><p> <NullToText data={companyData?.street}/></p></div>
+                        <div className='BreweryDetailsTextContainer'><p className='BreweryDetailsTitles'>Address 2:</p><p><NullToText data={companyData?.address_2}/></p></div>
+                        <div className='BreweryDetailsTextContainer'><p className='BreweryDetailsTitles'>Address 3:</p><p> <NullToText data={companyData?.address_3}/></p></div>
+                        <div className='BreweryDetailsTextContainer'><p className='BreweryDetailsTitles'>City:</p><p> <NullToText data={companyData?.city}/></p></div>
+                        <div className='BreweryDetailsTextContainer'><p className='BreweryDetailsTitles'>State:</p><p> <NullToText data={companyData?.state}/></p></div>
+                        <div className='BreweryDetailsTextContainer'><p className='BreweryDetailsTitles'>County_province:</p><p> <NullToText data={companyData?.county_province}/></p></div>
+                        <div className='BreweryDetailsTextContainer'><p className='BreweryDetailsTitles'>Postal_code:</p><p> <NullToText data={companyData?.postal_code}/></p></div>
+                    </div>
+                    <Button onClick={()=>{ history("/");}}>Go Back</Button>
                 </div>
-                <Button onClick={()=>{ history("/");}}>Go Back</Button>
             </div>
         </div>
     );
